@@ -1,0 +1,23 @@
+.navbar{
+    padding: 1.5%;
+    background-color: #218380;
+    color: white;
+}
+
+
+.Quesbox {
+  background-color:#ffff;
+  position: absolute;
+  height: 50%;
+  width: 60%;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  box-shadow: 14px 5px 5px #777777;
+  border-radius: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid #777777;
+}
