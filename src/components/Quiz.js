@@ -1,6 +1,6 @@
 import React,{useState} from "react"
 import "../css/style.css"
-import Quizdata, { QuizData } from "./Quizdata"
+import Quizdata,{QuizData} from "./Quizdata"
 
 function Quiz() {
     const [currentQuestion, setCurrentQuestion] = useState("0");
@@ -10,7 +10,7 @@ function Quiz() {
     const handleAnswer = (isCorrect) =>
     {
     if(isCorrect){
-        setScore(score+1)
+        setScore(score+1);
     }
     const nextQuestion = currentQuestion + 1;
 		if (nextQuestion < QuizData.length) {
@@ -20,21 +20,31 @@ function Quiz() {
         }
     };
     return (
+        <div className="app">
+        {showScore ? (
+            <div className="scoresection">
+              You scored {score} out of {QuizData.length}
+            </div>
+        ):(
         <>
         <div className="navbar">
         <span>View Highscore </span><i className="fas fa-hand-point-left fa-lg"></i>
         </div>
         <div className="quesbox">
+           <div className="quescount">
+             <span>Question{currentQuestion+1}</span>/{QuizData.length}
+           </div>
            <div className="questext">
-            {Quizdata[1].question}
+            {Quizdata[currentQuestion].question}
            </div>
            <div className="answers">
-               {QuizData[1].options.map((options)=>(
+               {QuizData[currentQuestion].options.map((options)=>(
                    <button onClick={()=> handleAnswer(options.isCorrect)}> {options.answerText}</button>
                ))}
            </div>
         </div>
-        </>
+        </>)}
+        </div>
     )
 }
 
