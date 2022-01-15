@@ -1,32 +1,40 @@
 export const QuizData = [
     {
-        id: 0,
         question: `What is the capital of Nigeria?`,
-        options: [`New Delhi`, `Abuja`, `Owerri`, `Enugu`],
-        answer: `Abuja`
+        options: [{ answerText: 'New Delhi', isCorrect: false },
+        { answerText: 'Abuja', isCorrect: true },
+        { answerText: 'Owerri', isCorrect: false },
+        { answerText: 'Enugu', isCorrect: false },]
+
     },
     {
-        id: 0,
         question: `What is the capital of India?`,
-        options: [`New Delhi`, `Abuja`, `Mumbai`, `Aba`],
-        answer: `New Delhi`
+        options: [{ answerText: 'New Delhi', isCorrect: true },
+        { answerText: 'Abuja', isCorrect: false },
+        { answerText: 'Mumbai', isCorrect: false },
+        { answerText: 'Aba', isCorrect: false },]
     },
     {
-        id: 0,
         question: `What is the capital of Australia?`,
-        options: [`Melbourne`, `Akokwa`, `Owerri`, `Sydney`],
-        answer: `Sydney`
+        options: [{ answerText: 'Melbourne', isCorrect: false },
+        { answerText: 'Akokwa', isCorrect: false },
+        { answerText: 'Owerri', isCorrect: false },
+        { answerText: 'Sydney', isCorrect: true },]
     },
     {
-        id: 0,
         question: `What is the capital of Turkey?`,
-        options: [`Rijadh`, `Ankara`, `Istanbul`, `Abakaliki`],
-        answer: `Ankara`
+        options: [{ answerText: 'Rijadh', isCorrect: false },
+        { answerText: 'Ankara', isCorrect: true },
+        { answerText: 'Istanbul', isCorrect: false },
+        { answerText: 'Abakaliki', isCorrect: false },]
     },
     {
-        id: 0,
         question: `What is the capital of Syria?`,
-        options: [`Syria`, `Damascus`, `Anambra`, `Enugu`],
-        answer: `Damascus`
+        options: [{ answerText: 'New Delhi', isCorrect: false },
+        { answerText: 'Damascus', isCorrect: true },
+        { answerText: 'Anambra', isCorrect: false },
+        { answerText: 'Enugu', isCorrect: false },]
     },
 ]
+
+export default QuizData

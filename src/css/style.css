@@ -5,7 +5,7 @@
 }
 
 
-.Quesbox {
+.quesbox {
   background-color:#ffff;
   position: absolute;
   height: 50%;
@@ -17,7 +17,32 @@
   bottom: 0;
   box-shadow: 14px 5px 5px #777777;
   border-radius: 40px;
-  display: flex;
   flex-wrap: wrap;
   border: solid #777777;
+  text-align: left;
 }
+.questext{
+    padding: 4%;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.answers{
+
+}
+button {
+    width: 100%;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #218380;
+    border-radius: 15px;
+    display: flex;
+    padding: 12px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid #234668;
+    cursor: pointer;
+  }
+  button:hover{
+  transform: scale(1.05);
+  }
