@@ -23,6 +23,7 @@
 }
 .questext{
     padding: 4%;
+    padding-top: 3%;
     font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -39,7 +40,18 @@ button {
     align-items: center;
     border: 2px solid #234668;
     cursor: pointer;
+    margin-bottom: 1%;
   }
   button:hover{
   transform: scale(1.05);
+  }
+  
+  .quescount
+  {
+      font-weight: bold;
+      padding-left: 4%;
+      padding-top: 2%;
+  }
+  .answers{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
