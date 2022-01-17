@@ -3,8 +3,6 @@
     background-color: #218380;
     color: white;
 }
-
-
 .quesbox {
   background-color:#ffff;
   position: absolute;
@@ -43,9 +41,8 @@ button {
     margin-bottom: 1%;
   }
   button:hover{
-  transform: scale(1.05);
+  transform: scale(0.95);
   }
-  
   .quescount
   {
       font-weight: bold;
@@ -54,4 +51,12 @@ button {
   }
   .answers{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 12px;
+  }
+  .scoresection{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      padding: 10% 0 0 0;
   }

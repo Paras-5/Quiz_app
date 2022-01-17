@@ -25,7 +25,7 @@ function Quiz() {
         <span>View Highscore </span><i className="fas fa-hand-point-left fa-lg"></i>
         </div>
         {showScore ? (
-            <div className="scoresection">
+            <div className="scoresection quesbox">
               You scored {score} out of {QuizData.length}
             </div>
         ):(
