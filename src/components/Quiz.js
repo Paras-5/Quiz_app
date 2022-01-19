@@ -2,6 +2,8 @@ import React,{useState} from "react"
 import "../css/style.css"
 import {QuizData} from "../services/Quizdata"
 
+const highscores = localStorage.setItem('highscores',JSON.stringify([]))
+
 function Quiz() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [showScore,setShowScore] = useState(false);
